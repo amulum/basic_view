@@ -4,8 +4,6 @@
 <div class="wrap-blog">
     <div class="container">
         <div class="row justify-content-center">
-            {% for blog in blogs %}
-            <!-- content loop -->
             <div class="col-7">
                 <div class="row wrap-blog--img justify-content-center">
                     <img src="{{blog.image_path}}"alt="">
@@ -24,18 +22,11 @@
                 <div class="row">
                     <!-- paragraph -->
                     <div class="news-para">
-                        {{blog.content|safe|linebreaks|truncatewords:20}}
-                        <a href="{% url 'basic_view:readmore' blog.id%}" class="baca-s">Baca selengkapnya</a>
+                        {{blog.content}}
                     </div>
                 </div>
             </div>
-            {% endfor %}
         </div>
-        <br>
-        <form class="d-flex justify-content-center" action="/blog/input_blog" method="GET">
-            <button type="submit" class="btn btn-success submit-content">Submit New Content</button>
-        </form>
-        <br>
     </div>
 </div>
-{% endblock %}
+{%endblock%}

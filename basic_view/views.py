@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Blog, Mentee, Mentor
 # Create your views here.
 
@@ -7,7 +7,7 @@ def index(request):
 
 def blog(request):
     blog = Blog.objects.all()
-    readmore = True
+    readmore = False
 
     return render (request, 'basic_view/blog.html', {'blogs':blog, 'readmore': readmore})
 
@@ -37,3 +37,7 @@ def update(request):
 
     blog = Blog.objects.all()
     return render (request, 'basic_view/blog.html', {'blogs':blog})
+
+def readmore(request, blog_id):
+    post = get_object_or_404(Blog, pk=blog_id)
+    return render (request, 'basic_view/readmore.html', {'blog' : post})

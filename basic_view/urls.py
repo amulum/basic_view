@@ -26,4 +26,5 @@ urlpatterns = [
     path('author/', views.author, name='author'),
     path('blog/input_blog', views.input_blog, name='input_blog'),
     path('blog/update', views.update, name='input_content'),
+    path('blog/<int:blog_id>/readmore', views.readmore, name='readmore')
 ]
