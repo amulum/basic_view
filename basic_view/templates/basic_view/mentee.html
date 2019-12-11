@@ -1,0 +1,32 @@
+{% extends 'basic_view/base.html' %}
+
+{% block content %}
+{%load static%}
+<div class="wrap-mentor--content">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10">
+                <div class="row d-flex justify-content-center">
+                    <div class="our-mentee">Our Mentee</div>
+                </div>     
+            </div>
+            {%for mentee in mentees%}
+            <!-- content loop -->
+            <div class="row d-flex justify-content-center wrap-mentor--box">
+                <div class="col-4">
+                    <div class="mentee-img">
+                        <img src="{%static ''%}{{mentee.image_path}}" alt="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="wrap-mentee-text">
+                        <div class="mentee-name">{{mentee.name}}</div>
+                        <div class="mentee-quote">{{mentee.quote}}</div>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+{% endblock %}

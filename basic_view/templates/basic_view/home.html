@@ -1,0 +1,98 @@
+{% extends 'basic_view/base.html' %}
+
+{% block content %}
+{%load static%}
+
+<div class="wrap-home--content">
+    <div class="container">
+
+        <!-- content atas -->
+        <div class="row home-content--top">
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="{%static 'img/home/benefit.png'%}" alt="">
+                </div>
+                <div class="col-8">
+                    <div class="home-content--top__text">
+                        Learn awesome tech
+                    </div>
+                    <p class="home-content--top__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora aliquam labore voluptate beatae, nulla atque ad est ducimus non nemo harum iure eaque quasi dignissimos voluptatem nobis debitis dolore.</p>    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="{%static 'img/home/search-job.png'%}" alt="">
+                </div>
+                <div class="col-8">
+                    <div class="home-content--top__text">
+                        Land new job
+                    </div>
+                    <p class="home-content--top__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora aliquam labore voluptate beatae, nulla atque ad est ducimus non nemo harum iure eaque quasi dignissimos voluptatem nobis debitis dolore.</p>    
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="{%static 'img/home/get-paid.png'%}" alt="">
+                </div>
+                <div class="col-8">
+                    <div class="home-content--top__text">
+                        Get paid to learn
+                    </div>
+                    <p class="home-content--top__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora aliquam labore voluptate beatae, nulla atque ad est ducimus non nemo harum iure eaque quasi dignissimos voluptatem nobis debitis dolore.</p>    
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- content tengah -->
+        <div class="row home-content--mid">
+            <div class="col-4 d-flex justify-content-center">
+                    <img src="{%static 'img/home/mission.png'%}" alt="">
+            </div>
+            <div class="col-8 padding_15">
+                <div class="row">
+                    <div class="home-content--top__text__larger">
+                            Who are we?
+                        </div>
+                        <p class="home-content--top__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora aliquam labore voluptate beatae, nulla atque ad est ducimus non nemo harum iure eaque quasi dignissimos voluptatem nobis debitis dolore.</p>
+                </div>
+                <div class="row">
+                    <div class="home-content--top__text__larger">
+                            What is our mission?
+                        </div>
+                        <p class="home-content--top__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora aliquam labore voluptate beatae, nulla atque ad est ducimus non nemo harum iure eaque quasi dignissimos voluptatem nobis debitis dolore.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- gambar bawah -->
+        <div class="row d-flex justify-content-center">
+            <div class="home-wwyl">
+                <div class="home-wwyl_text">
+                    What will you learn?
+                </div>
+            </div>
+        </div>
+
+        <!-- gambar python dll -->
+        <div class="row d-flex justify-content-center margin__10">
+            <div class="wrap-icon--wwyl d-flex justify-content-center">
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-html.png'%}" alt=""></div>
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-programming.png'%}" alt=""></div>
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-git.png'%}" alt=""></div>
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-api.png'%}" alt=""></div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center margin__10">
+            <div class="wrap-icon--wwyl d-flex justify-content-center">
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-react.png'%}" alt=""></div>
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-tdd.png'%}" alt=""></div>
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-server.png'%}" alt=""></div>
+                <div class="col-2 wrap-icon"><img src="{%static 'img/home/learn-scrum.png'%}" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

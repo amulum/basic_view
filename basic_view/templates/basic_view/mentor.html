@@ -1,0 +1,34 @@
+{% extends 'basic_view/base.html' %}
+{% block content %}
+{%load static%}
+<div class="wrap-mentor--content">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <!-- our mentor -->
+            <div class="our-mentor"> Our Mentor</div>
+        </div>
+        {%for mentor in mentors%}
+        <!-- content loop -->
+        <div class="row d-flex justify-content-center margin__10">
+            <div class="col-3">
+                <!-- image -->
+                <img src="{% static ''%}{{mentor.image_path}}" alt="">
+            </div>
+            <div class="col-1">
+                <!-- none -->
+            </div>
+            <div class="col-6">
+                <!-- profile -->
+                <div class="wrap-mentor-name_exp d-flex flex-column">
+                    <div class="mentor-name">{{mentor.name}}</div>
+                    <div class="mentor-exp">{{mentor.experience}}</div>
+                </div>
+                <div class="mentor-quote">
+                    {{mentor.quote}}
+                </div>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+{% endblock %}

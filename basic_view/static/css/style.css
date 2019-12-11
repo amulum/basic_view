@@ -1,0 +1,282 @@
+/*---------------------------- font ----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face{
+    src: url(../fonts/SFCompactDisplay-Semibold) format('truetype'); 
+    font-family: 'SFCompactDisplay';
+}
+
+/*---------------------------- header ----------------------------*/
+
+.wrap-container--header{
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0px 3px 6px #C1C3C736;
+    /* position: relative; */
+
+}
+
+ .company-name{
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+/*
+.blok-header{
+    
+} */
+
+.header-nav{
+    display: table;
+    margin-left: auto;
+}
+
+.header-nav__list{
+    margin: 0;
+}
+
+.header-nav__list li{    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-nav__list li a{
+    font-family: "Roboto";
+    font-size: 15px;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2c413ff3
+}
+
+.header-nav__list li a:hover,
+.header-nav__list li .active-page {
+    color: #f12875d0;
+}
+
+.page-title{
+    text-align: center;
+    color: white;
+    padding: 10px 60px;
+}
+.page-title-background{
+    background-color: #39bcc5;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.page-title h1{
+    font-family: "Roboto";
+    font-size: 32px;
+    margin : auto;
+}
+
+.company-logo{
+    padding-top: 30px;
+}
+
+.wrap-body--base {
+    margin-top: 60px;
+}
+
+/*---------------------------- EOF header ----------------------------*/
+
+
+
+/*---------------------------- Body Base ----------------------------*/
+.wrap-body--base {
+    margin-top: 60px;
+}
+.wrap-base--content {
+    background : white;
+    padding: 10px;
+}
+/*---------------------------- EOF Body Base ----------------------------*/
+
+/*---------------------------- home ----------------------------*/
+.home-content--top__text {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+
+.home-content--top {
+    margin: 20px auto;
+}
+
+.home-content--top__text__larger {
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.home-content--mid {
+    margin: 20px auto;
+}
+.home-wwyl {
+    margin : 20px 0;
+}
+
+.home-wwyl_text {
+    font-size: x-large;
+}
+
+.wrap-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 89px;
+    border: 1px solid burlywood;
+    margin: 0 10px;
+    max-width: 200px;
+}
+
+.margin__10 {
+    margin: 20px;
+}
+/*---------------------------- EOF home ----------------------------*/
+
+
+
+/*---------------------------- author ----------------------------*/
+.wrap-author--content_input {
+    max-width: 60%;
+}
+.wrap-img--author {
+    max-width: 100%;
+}
+
+.nama-author {
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+.wrap-summary {
+    margin: 10px 0;
+}
+
+.wrap-address {
+    margin: 10px 0;
+}
+
+.wrap-address table tr td{
+    padding: 5px;
+    border: none;
+    
+}
+
+/*---------------------------- EOF author ----------------------------*/
+
+/*---------------------------- blog ----------------------------*/
+
+
+.wrap-blog {
+    max-width: 100%;
+}
+
+.wrap-blog--img img{
+    max-width: 100%;
+}
+.blog-date_comment span {
+    color : #96BCE9;
+
+}
+
+.blog-title--news {
+    font-size: xx-large;
+}
+
+.news-para {
+    font-size: large;
+}
+
+.baca-s {
+    margin: 10px 0 30px 0;
+}
+
+
+/*---------------------------- EOF blog ----------------------------*/
+
+/*---------------------------- mentee ----------------------------*/
+
+.mentee-img img{
+    max-width: 100%;
+}
+
+.our-mentee {
+    font-size: x-large;
+    margin: 20px 0;
+    font-weight: 600;
+}
+.mentee-name {
+    font-weight: 600;
+    font-size: large;
+}
+
+.wrap-mentor--box {
+    margin : 20px 0;
+}
+/*---------------------------- EOF mentee ----------------------------*/
+
+
+/*---------------------------- mentor ----------------------------*/
+
+.our-mentor {
+    font-size: x-large;
+    margin : 20px 0;
+    font-weight: 600;
+}
+
+.mentor-name {
+    color : #bcb5b1;
+    font-size: x-large;
+    font-weight: 600;
+}
+.mentor-exp {
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+/*---------------------------- EOF mentor ----------------------------*/
+
+/*---------------------------- Footer ----------------------------*/
+
+.our-product {
+    color: #676767;
+}
+
+.cp-text {
+    color: white;
+    font-size: 20px;
+}
+.bg-footer--top {
+    background-color : #2EC6CE;
+    padding: 10px 0;
+}
+
+.bg-footer--bottom {
+    background-color : #000000;
+    padding: 10px 0;
+}
+/*---------------------------- EOF Footer ----------------------------*/
+
+/*---------------------------- input blog ----------------------------*/
+.wrap-input_blog{
+    margin-top: 60px;
+}
+.wrap-input_blog form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit-content {
+    margin: 20px 0;
+}
+/*---------------------------- EOF input blog ----------------------------*/
+
